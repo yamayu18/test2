@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>監修クリニック紹介 | 医療法人百花繚乱</title>
+  <meta name="description" content="百花ジェルは歯科医師監修。毎日使う口のケアを、歯科の現場の目線で確認しています。監修クリニック・医療法人百花繚乱のご紹介です。">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    .header-logo {
+      line-height: 1.3;
+      padding: 0.35rem 0.75rem;
+      border-left: 3px solid #B85C38;
+      background: linear-gradient(to right, rgba(184,92,56,0.06) 0%, transparent 100%);
+      border-radius: 0 4px 4px 0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #333;
+      background-color: #FAFAF8;
+      line-height: 1.9;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; }
+    .intro-lead { font-size: 1.0625rem; line-height: 1.95; color: #374151; }
+    @media (min-width: 768px) { .intro-lead { font-size: 1.125rem; line-height: 2; } }
+    .intro-section { scroll-margin-top: 5rem; }
+    .intro-card { border-left: 4px solid rgba(184,92,56,0.4); }
+    .intro-check { display: flex; align-items: flex-start; gap: 0.625rem; }
+    .intro-check::before { content: ''; flex-shrink: 0; width: 1.375rem; height: 1.375rem; margin-top: 0.15rem; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23B85C38' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'/%3E%3C/svg%3E") no-repeat center; background-size: contain; }
+    .intro-h2 { font-size: 1.25rem; }
+    @media (min-width: 768px) { .intro-h2 { font-size: 1.5rem; } }
+    @media (max-width: 768px) {
+      html { -webkit-text-size-adjust: 100%; }
+      body { overflow-x: hidden; }
+      header.w-full { padding-top: 1rem; padding-bottom: 1rem; padding-left: 1rem; padding-right: 1rem; }
+      main section { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+      .intro-section .max-w-4xl { padding-left: 1rem; padding-right: 1rem; }
+      .intro-section .max-w-3xl { padding-left: 1rem; padding-right: 1rem; }
+      .intro-section + section .max-w-3xl { padding-left: 1rem; padding-right: 1rem; }
+      main > section:first-of-type .max-w-3xl { padding-left: 1rem; padding-right: 1rem; }
+      .intro-card { padding-left: 1rem; }
+      .intro-h2 { font-size: 1.125rem; }
+      .intro-lead { font-size: 1rem; line-height: 1.9; }
+      #menu-toggle { min-width: 44px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+      footer .flex a { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="w-full py-6 px-4 md:px-8 bg-[#EFEFE7] sticky top-0 z-40 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center justify-between">
+        <button id="menu-toggle" class="z-50" aria-label="メニュー">
+          <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <a href="index.html" class="header-logo text-left block">
+          <span class="block text-xs md:text-sm font-bold text-gray-800 tracking-widest uppercase">監修</span>
+          <span class="block text-lg md:text-2xl font-medium text-[#B85C38] tracking-wider mt-0.5" style="font-family: 'M PLUS Rounded 1c', sans-serif;">ほほえみ歯科</span>
+        </a>
+        <a href="index.html" aria-label="カート" class="text-gray-700">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+        </a>
+      </div>
+      <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
+      <div id="side-menu" class="fixed left-0 top-0 h-full w-64 bg-white shadow-xl z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-8">
+            <h2 class="text-lg font-light text-gray-800">メニュー</h2>
+            <button id="menu-close" class="text-gray-700 hover:text-gray-900">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <nav class="space-y-4">
+            <a href="index.html" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">ホーム</a>
+            <a href="product-detail.html" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">商品詳細</a>
+            <a href="subscription-detail.html" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">定期お届け便</a>
+            <a href="product-detail.html#faq" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">よくある質問</a>
+            <a href="intro.html" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">監修クリニック紹介</a>
+            <a href="contact.html" class="block text-gray-700 hover:text-gray-900 font-light py-2 border-b border-gray-100">お問い合わせ</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ページタイトル -->
+    <section class="w-full py-10 md:py-14 bg-[#FAFAF8]">
+      <div class="max-w-3xl mx-auto px-5 md:px-8">
+        <h1 class="text-xl md:text-3xl font-light text-gray-800 text-center">
+          監修クリニック紹介
+        </h1>
+      </div>
+    </section>
+
+    <!-- 01 監修クリニック ほほえみ歯科 本院（2枚目の写真） -->
+    <section id="clinic" class="intro-section w-full py-10 md:py-16 bg-[#F8F7F5]">
+      <div class="max-w-4xl mx-auto px-5 md:px-8">
+        <div class="flex items-baseline gap-3 mb-6 md:mb-8">
+          <span class="text-xs font-medium text-[#B85C38] tracking-widest">01</span>
+          <h2 class="intro-h2 font-light text-gray-800">
+            監修クリニック
+          </h2>
+        </div>
+        <p class="text-base md:text-xl font-light text-gray-800 mb-6 md:mb-8" style="font-family: 'M PLUS Rounded 1c', sans-serif;">
+          ほほえみ歯科 本院（高槻市）
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-8 md:gap-10 items-start">
+          <div class="intro-card pl-5 md:pl-6 space-y-6 md:space-y-8 order-2 md:order-1">
+            <p class="intro-lead font-light">
+              高槻市で地域に根ざした診療を行っている歯科医院です。<br>
+              「歯医者がこわい」「痛いのが不安」<br>
+              そんな声に向き合いながら、こわくない・痛みに配慮した診療を心がけています。
+            </p>
+            <p class="intro-lead font-light">
+              治療だけでなく、<br>
+              虫歯や歯周病を防ぐための予防・毎日のケアにも力を入れており、<br>
+              普段の歯みがきや口腔ケアについての相談も多く受けています。
+            </p>
+            <p class="intro-lead font-medium pt-2 text-gray-800">
+              理事長：松岡 督明
+            </p>
+          </div>
+          <div class="order-1 md:order-2 md:sticky md:top-24 flex justify-center md:justify-end">
+            <div class="w-full max-w-[360px] mx-auto md:mx-0 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+              <img src="./images/clinic-treatment.png" alt="院内の様子" class="w-full h-auto max-h-[480px] object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 予防と毎日のケアを大切に（1枚目の写真） -->
+    <section id="kanshu" class="intro-section w-full py-10 md:py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-5 md:px-8">
+        <div class="flex items-baseline gap-3 mb-6 md:mb-8">
+          <span class="text-xs font-medium text-[#B85C38] tracking-widest">02</span>
+          <h2 class="intro-h2 font-light text-gray-800">
+            予防と毎日のケアを大切に
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-8 md:gap-10 items-start">
+          <div class="intro-card pl-5 md:pl-6 space-y-6 md:space-y-8 order-2 md:order-1">
+            <p class="intro-lead font-light">
+              毎日使う、口のケアのための商品です。<br>
+              歯科医院で多くの患者さんと向き合う中で、<br>
+              「治療が必要になる前に、できることはないか」<br>
+              という視点から生まれました。
+            </p>
+            <p class="intro-lead font-light">歯科の現場で実際に確認しているのは、</p>
+            <ul class="space-y-4 font-light">
+              <li class="intro-check intro-lead">毎日使い続けても負担にならないか</li>
+              <li class="intro-check intro-lead">子どもや家族にも使わせたいと思えるか</li>
+              <li class="intro-check intro-lead">使い方がわかりやすく、続けやすいか</li>
+            </ul>
+            <p class="intro-lead font-light">
+              治療の代わりではなく、<br>
+              日常のケアとして無理なく使えることを大切にしています。
+            </p>
+          </div>
+          <div class="order-1 md:order-2 md:sticky md:top-24 flex justify-center md:justify-end">
+            <div class="w-full max-w-[360px] mx-auto md:mx-0 bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+              <img src="./images/clinic-explanation.png" alt="診察の様子" class="w-full h-auto max-h-[480px] object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 医療法人 百花繚乱について -->
+    <section id="hojin" class="intro-section w-full py-10 md:py-16 bg-white">
+      <div class="max-w-3xl mx-auto px-5 md:px-8">
+        <div class="flex items-baseline gap-3 mb-6 md:mb-8">
+          <span class="text-xs font-medium text-[#B85C38] tracking-widest">03</span>
+          <h2 class="intro-h2 font-light text-gray-800">
+            医療法人 百花繚乱について
+          </h2>
+        </div>
+        <div class="intro-card pl-5 md:pl-6 space-y-6 md:space-y-8">
+          <p class="intro-lead font-light">
+            医療法人 百花繚乱は、複数の歯科医院を運営しています。<br>
+            日々の診療の中で、<br>
+            「もっと早く知っていれば防げたかもしれない」<br>
+            という場面に数多く立ち会ってきました。
+          </p>
+          <p class="intro-lead font-light">
+            その経験から、<br>
+            診療室の中だけでなく、<br>
+            自宅でのケアまで含めてサポートできる存在でありたい<br>
+            という考えで、商品監修にも関わっています。
+          </p>
+          <p class="intro-lead font-light pt-2">
+            「患者さんに説明できるか」<br>
+            「自分たちがすすめたいと思えるか」<br>
+            その基準で確認しています。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-[#EFEFE7] border-t border-gray-100 mt-12 md:mt-16">
+    <div class="max-w-4xl mx-auto px-4 md:px-8 py-12">
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-600 mb-6">
+        <a href="product-detail.html" class="hover:text-gray-800 transition-colors">商品紹介</a>
+        <span class="text-gray-300">|</span>
+        <a href="intro.html" class="hover:text-gray-800 transition-colors">監修クリニック紹介</a>
+        <span class="text-gray-300">|</span>
+        <a href="index.html#concept" class="hover:text-gray-800 transition-colors">コンセプト・私たちの思い</a>
+        <span class="text-gray-300">|</span>
+        <a href="contact.html" class="hover:text-gray-800 transition-colors">お問い合わせ</a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-gray-600 mb-10">
+        <a href="legal-notice.html" class="hover:text-gray-800 transition-colors py-2">特定商取引法に基づく表記</a>
+        <span class="text-gray-300">|</span>
+        <a href="terms-of-service.html" class="hover:text-gray-800 transition-colors py-2">利用規約</a>
+      </div>
+      <div class="text-center mb-8">
+        <p class="text-sm md:text-base font-medium text-gray-800">監修：ほほえみ歯科</p>
+      </div>
+      <div class="border-t border-gray-200 pt-6">
+        <p class="text-xs text-gray-500 text-center">© 2024 医療法人百花繚乱. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var menuToggle = document.getElementById('menu-toggle');
+      var menuClose = document.getElementById('menu-close');
+      var sideMenu = document.getElementById('side-menu');
+      var menuOverlay = document.getElementById('menu-overlay');
+      function openMenu() {
+        sideMenu.classList.remove('-translate-x-full');
+        menuOverlay.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeMenu() {
+        sideMenu.classList.add('-translate-x-full');
+        menuOverlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      if (menuToggle) menuToggle.addEventListener('click', openMenu);
+      if (menuClose) menuClose.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !sideMenu.classList.contains('-translate-x-full')) closeMenu();
+      });
+    });
+  </script>
+</body>
+</html>
